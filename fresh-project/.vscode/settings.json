@@ -1,0 +1,27 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#192278",
+    "titleBar.activeBackground": "#232FA8",
+    "titleBar.activeForeground": "#F9FAFE"
+  },
+  "twind.enable": true,
+  "editor.suggest.showStatusBar": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
