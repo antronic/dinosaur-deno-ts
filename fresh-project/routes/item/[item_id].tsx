@@ -1,7 +1,7 @@
 import { PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 
-import Navbar from "../../components/common/Navbar.tsx";
+import Navbar from "../../islands/common/Navbar.tsx";
 import Rating from "../../components/Rating.tsx";
 import Quantity from "../../islands/ItemView/Quantity.tsx";
 import { useSignal } from "@preact/signals";
@@ -16,6 +16,7 @@ export type ItemReview = {
   username: string;
   userImg: string;
   itemId: string;
+  likeCount: number;
 }
 
 export type ItemInfo = {
@@ -40,6 +41,7 @@ const itemInfo: ItemInfo = {
       username: "SID THE MAMMOTH HUNTER",
       content: "IT took me back to the time of woolly mammoths! The taste was intriguing, and it felt like a unique culinary adventure. If you're curious about prehistoric flavors, give it a go!",
       userImg: "user-01.png",
+      likeCount: 28,
     },
     {
       rating: 4,
@@ -47,6 +49,7 @@ const itemInfo: ItemInfo = {
       username: "Flintstone",
       content: `"Delicious Mammoth Bone" is a true time-travel treat! Just like Fred Flintstone's favorite flavors – bold, brontosaurus-approved, and absolutely yummy! Yabba Dabba Delightful! 🦴🍖 #BedrockBites #FlintstoneFan`,
       userImg: "user-02.png",
+      likeCount: 12,
     },
   ],
 }
@@ -54,6 +57,7 @@ const itemInfo: ItemInfo = {
 export default function ItemPage(props: PageProps) {
   const itemId = props.params.item_id;
   const count = useSignal(1);
+  const cartItemCount = useSignal(0);
 
   return (
     <>
@@ -62,7 +66,7 @@ export default function ItemPage(props: PageProps) {
         <link rel="stylesheet" href="/styles/item-page.css" />
       </Head>
       {/* Navbar */}
-      <Navbar />
+      <Navbar itemCount={cartItemCount}/>
 
 
       {/* Item zone */}
@@ -87,7 +91,7 @@ export default function ItemPage(props: PageProps) {
               ${commaFormat(itemInfo.price)}
             </p>
 
-            <AddToCart count={count} itemInfo={itemInfo}/>
+            <AddToCart count={count} itemInfo={itemInfo} cartItemAmount={cartItemCount}/>
           </div>
         </div>
         {/* Item Info */}

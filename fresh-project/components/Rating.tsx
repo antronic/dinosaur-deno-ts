@@ -8,7 +8,7 @@ export default function Rating(props: RatingProps) {
 
     return Array.from({ length: max }, (_, i) => {
       return (
-        <span class={`iconify-inline inline text-3xl ${i + 1 < max ? "text-red-400" : "text-gray-800" }`} data-icon="ph:bone"></span>
+        <span class={`iconify-inline inline text-3xl ${i + 1 < max ? "text-red-400" : "text-gray-800" }`} data-icon={i + 1 < max ? "ph:bone-fill" : "ph:bone" }></span>
       )
     })
   }

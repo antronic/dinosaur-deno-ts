@@ -1,4 +1,10 @@
-import SearchBox from "./SearchBox.tsx"
+import { Signal } from "@preact/signals";
+import CartButton from "../../components/CartButton.tsx"
+import SearchBox from "../../components/common/SearchBox.tsx"
+
+interface NavbarProps {
+  itemCount: Signal<number>;
+}
 
 const suggestProducts = [
   "Snack Pack",
@@ -33,7 +39,7 @@ const suggestProducts = [
   "Watercolor Set"
 ]
 
-export default function() {
+export default function(props: NavbarProps) {
 
   function listSuggestion() {
     return suggestProducts.splice(0, 10).map((product) => {
@@ -54,6 +60,10 @@ export default function() {
 
         <div style={{ width: '60%' }} class="ml-24">
           <SearchBox />
+        </div>
+
+        <div class="ml-24">
+          <CartButton itemCount={props.itemCount} />
         </div>
       </div>
 

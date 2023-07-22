@@ -1,5 +1,5 @@
 import { ItemReview } from "../../routes/item/[item_id].tsx";
-import UserReviewCard from "./UserReviewCard.tsx";
+import UserReviewCard from "../../components/UserReviewCard/index.tsx";
 
 interface UserReviewListProps {
   reviews: ItemReview[];

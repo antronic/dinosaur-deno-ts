@@ -14,8 +14,8 @@ import * as $$1 from "./islands/ItemView/AddToCart.tsx";
 import * as $$2 from "./islands/ItemView/Carousel.tsx";
 import * as $$3 from "./islands/ItemView/Quantity.tsx";
 import * as $$4 from "./islands/ItemView/TotalPrice.tsx";
-import * as $$5 from "./islands/ItemView/UserReviewCard.tsx";
-import * as $$6 from "./islands/ItemView/UserReviewList.tsx";
+import * as $$5 from "./islands/ItemView/UserReviewList.tsx";
+import * as $$6 from "./islands/common/Navbar.tsx";
 
 const manifest = {
   routes: {
@@ -33,8 +33,8 @@ const manifest = {
     "./islands/ItemView/Carousel.tsx": $$2,
     "./islands/ItemView/Quantity.tsx": $$3,
     "./islands/ItemView/TotalPrice.tsx": $$4,
-    "./islands/ItemView/UserReviewCard.tsx": $$5,
-    "./islands/ItemView/UserReviewList.tsx": $$6,
+    "./islands/ItemView/UserReviewList.tsx": $$5,
+    "./islands/common/Navbar.tsx": $$6,
   },
   baseUrl: import.meta.url,
 };
