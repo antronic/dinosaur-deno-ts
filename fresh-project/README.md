@@ -1,6 +1,6 @@
 # DINO Mall on Azure
 
-![Dino mall logo](https://raw.githubusercontent.com/antronic/dinosaur-deno-ts/main/fresh-project/content/dino-mall-logo.png)
+![Dino mall logo](https://raw.githubusercontent.com/antronic/dinosaur-deno-ts/main/fresh-project/content/Dino-mall-logo.png)
 
 This project was created with Fresh. Fresh is a Deno project generator that is designed to be simple and easy to use. Fresh is a command line tool that generates a new Deno project with a simple project structure and a few useful scripts to help you get started.
 
