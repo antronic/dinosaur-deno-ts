@@ -6,6 +6,7 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $counter from "./routes/counter.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $item_item_id_ from "./routes/item/[item_id].tsx";
@@ -16,6 +17,7 @@ import * as $ItemView_Quantity from "./islands/ItemView/Quantity.tsx";
 import * as $ItemView_TotalPrice from "./islands/ItemView/TotalPrice.tsx";
 import * as $ItemView_UserReviewList from "./islands/ItemView/UserReviewList.tsx";
 import * as $common_Navbar from "./islands/common/Navbar.tsx";
+import * as $common_Redirect from "./islands/common/Redirect.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -24,6 +26,7 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/about.tsx": $about,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/counter.tsx": $counter,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/item/[item_id].tsx": $item_item_id_,
@@ -36,6 +39,7 @@ const manifest = {
     "./islands/ItemView/TotalPrice.tsx": $ItemView_TotalPrice,
     "./islands/ItemView/UserReviewList.tsx": $ItemView_UserReviewList,
     "./islands/common/Navbar.tsx": $common_Navbar,
+    "./islands/common/Redirect.tsx": $common_Redirect,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

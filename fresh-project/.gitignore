@@ -9,3 +9,4 @@
 _fresh/
 
 local.settings.json
+.DS_Store

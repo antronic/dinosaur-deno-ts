@@ -52,11 +52,13 @@ export default function(props: NavbarProps) {
   return (
     <nav className="bg-venice-blue-900 text-white w-full">
       <div className="px-4 py-2 flex items-center container mx-auto">
-        <img src="/img/dinomall-logo.png" class="h-16" />
-        <h1>
-          <span className="text-4xl block">DINOMALL</span>
-          <span className="text-gray-300 block -mt-2">DALL FOR DINOMAUR</span>
-        </h1>
+        <div class="flex flex-row items-center">
+          <img src="/img/dinomall-logo.png" class="h-16" />
+          <h1>
+            <span className="text-4xl block">DINOMALL</span>
+            <span className="text-gray-300 block -mt-2">DALL FOR DINOMAUR</span>
+          </h1>
+        </div>
 
         <div style={{ width: '60%' }} class="ml-24">
           <SearchBox />
