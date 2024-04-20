@@ -8,4 +8,5 @@ Recommended:
 - [Deno VSCode Extension](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno) -->
 
 ### Projects
-- [![](https://raw.githubusercontent.com/antronic/dinosaur-deno-ts/main/fresh-project/content/Dino-mall-logo.png)](./fresh-project/)
+- [DINO Mall](./fresh-project/)
+  - [![](https://raw.githubusercontent.com/antronic/dinosaur-deno-ts/main/fresh-project/content/Dino-mall-logo.png)](./fresh-project/)
