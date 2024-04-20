@@ -32,3 +32,17 @@ Then navigate to `http://localhost:8000` in your browser to see the project runn
 You will see a page that looks like this:
 
 ![DINO Mall](https://raw.githubusercontent.com/antronic/dinosaur-deno-ts/main/fresh-project/content/Dino-mall-screenshot.png)
+
+
+### Deploy to Azure App Service or Azure Functions
+
+As I mentioned earlier in my talk, Azure App Service and Azure Functions does not support Deno out of the box.
+
+However, we can customize the handler to run Deno or use Docker to deploy your Deno application to Azure App Service or Azure Functions.
+
+<!-- Quote -->
+> "I will update this README with the steps to deploy this project later."
+
+In the meantime, you can learn more about both of methods from the following links:
+- [Custom handlers in Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers)
+- [Deploy a custom container to Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/tutorial-custom-container?tabs=azure-cli&pivots=container-linux)
